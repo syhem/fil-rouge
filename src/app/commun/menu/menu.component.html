@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <span class="navbar-brand">
+    🇩🇿  à l'algerienne
+  </span>
+
+  <!--
+      bouton pour le responsive
+  -->
+  <button class="navbar-toggler" (click)="toogleMenu(menu)">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" #menu>
+      <ul class="navbar-nav mr-auto"> <!-- ajouter mr-auto pour bien espacer les éléments dans le menu  -->
+          <li class="nav-item">
+              <a routerLink="/" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contact" class="nav-link">Nous contacter</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="/login" class="nav-link">Login</a>
+        </li>
+    </ul>
+
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a routerLink="/admin" class="nav-link">Admin</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
